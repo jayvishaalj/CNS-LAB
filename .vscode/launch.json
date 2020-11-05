@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CeaserCipher<CNS_de9f540c>",
+            "request": "launch",
+            "mainClass": "CeaserCipher",
+            "projectName": "CNS_de9f540c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HillCipher<CNS_de9f540c>",
+            "request": "launch",
+            "mainClass": "HillCipher",
+            "projectName": "CNS_de9f540c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ModInverse<CNS_de9f540c>",
+            "request": "launch",
+            "mainClass": "ModInverse",
+            "projectName": "CNS_de9f540c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PlayfairCipherMap<CNS_de9f540c>",
+            "request": "launch",
+            "mainClass": "PlayfairCipherMap",
+            "projectName": "CNS_de9f540c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RailFence<CNS_de9f540c>",
+            "request": "launch",
+            "mainClass": "RailFence",
+            "projectName": "CNS_de9f540c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RailFenceReal<CNS_de9f540c>",
+            "request": "launch",
+            "mainClass": "RailFenceReal",
+            "projectName": "CNS_de9f540c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VigenereCipher<CNS_de9f540c>",
+            "request": "launch",
+            "mainClass": "VigenereCipher",
+            "projectName": "CNS_de9f540c"
+        }
+    ]
+}
