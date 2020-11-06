@@ -8,9 +8,10 @@ public class RailFenceReal {
         String inputText = scan.next();
         System.out.println("Enter the Key Value: ");
         int key = scan.nextInt();
-        int r = key, len = inputText.length();
+        int r = key;
+        int len = inputText.length();
         int c = len / (key-1);
-        char mat[][] = new char[r][c];
+        char[][] mat = new char[r][c];
         int k = 1;
         mat[0][0] = inputText.charAt(0);
         boolean reverse = false;
@@ -37,12 +38,38 @@ public class RailFenceReal {
             }
             reverse = !reverse;
         }
+        String encryptedString =  "";
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[i].length; j++) {
-                if (mat[i][j]!=' ') {
-                    System.out.print(mat[i][j]);
+                if ((int) mat[i][j] != 0) {
+                    encryptedString+=mat[i][j];
                 }
             }
         }
+        System.out.println(encryptedString);
+
+
+        char[] decrypted = new char[encryptedString.length()];
+        int n = 0;
+        for(k = 0 ; k < key; k ++) {
+            int index = k;
+            boolean down = true;
+            while(index < encryptedString.length() ) {
+                decrypted[index] = encryptedString.charAt(n++);
+                if(k == 0 || k == key - 1) {
+                    index = index + 2 * (key - 1);
+                }
+                else if(down) {
+                    index = index + 2 * (key - k - 1);
+                    down = !down;
+                }
+                else {
+                    index = index + 2 * k;
+                    down = !down;
+                }
+            }
+        }
+        System.out.println( new String(decrypted));
+        scan.close();
     }
 }
