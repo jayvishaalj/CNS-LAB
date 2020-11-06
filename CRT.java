@@ -16,7 +16,7 @@ public class CRT {
 			rem[i] = input.nextInt();
 		}
 
-		print("Enter "+size+"remainders");
+		print("Enter "+size+"numbers");
 
 		for(int i=0; i<size; i++){
 			num[i] = input.nextInt();
